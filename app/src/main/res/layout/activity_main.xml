@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/alidaiiImage"
+            android:layout_width="@dimen/imageSize"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/alidaii"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/messiImage"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="@dimen/Height_size_Imgae"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/messiImage"
+            android:layout_width="@dimen/imageSize"
+            android:src="@drawable/linoal"
+            app:layout_constraintBottom_toTopOf="@+id/neimarImgae"
+            app:layout_constraintTop_toBottomOf="@+id/alidaiiImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margintop"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="@dimen/Height_size_Imgae"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/neimarImgae"
+            android:layout_width="@dimen/imageSize"
+            android:src="@drawable/jouniyor"
+            app:layout_constraintBottom_toTopOf="@+id/mbappeImage"
+            app:layout_constraintTop_toBottomOf="@+id/messiImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margintop"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="@dimen/Height_size_Imgae"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mbappeImage"
+            android:layout_width="@dimen/imageSize"
+            app:layout_constraintTop_toBottomOf="@+id/neimarImgae"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margintop"
+            android:src="@drawable/kat"
+            app:layout_constraintBottom_toTopOf="@+id/din"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="@dimen/Height_size_Imgae"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/din"
+            android:layout_width="@dimen/imageSize"
+            app:layout_constraintTop_toBottomOf="@+id/mbappeImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margintop"
+            android:src="@drawable/Din"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="@dimen/Height_size_Imgae"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
